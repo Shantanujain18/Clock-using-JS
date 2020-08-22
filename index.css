@@ -1,0 +1,71 @@
+@font-face{
+    font-family: digitalClock;
+    src: url("digital-7.ttf");
+}
+body{
+    margin: 0;
+    padding : 0;
+}
+#clockContainer{
+    position: relative;
+
+    
+    height:40vw;
+    width:50vw;
+    background: url("clock.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    
+}
+
+
+#hourhand,#minutehand,#secondhand{
+    position: absolute;
+    background: black;
+    transform-origin: bottom;
+}
+#hourhand{
+    width: 1.5%;
+    height: 18%;
+    left: 49.5%;
+    top: 30.5%;
+    opacity: 1;
+    rotate: 30deg;
+    
+
+}
+#minutehand{
+    width: 1.3%;
+    height: 26%;
+    left: 49.5%;
+    top: 23%;
+    opacity: 0.8;
+  
+}
+#secondhand{
+    width: 1%;
+    height: 34%;
+    left: 49.5%;
+    top: 16%;
+    opacity: 0.7;
+    
+}
+#digitalContainer{
+    position: relative;
+    margin: auto;
+    height: 5%;
+    width: 33%;
+    
+}
+
+#digitalClock{
+    position: absolute;
+    font: bold 5vw digitalClock,Arial ;
+    /* width: 20%;
+    height: 5%; */
+    border: 0.5vw solid black;
+    border-radius: 10px;
+    padding: 5%;
+    
+}
